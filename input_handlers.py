@@ -95,6 +95,7 @@ def handle_inventory_keys(key):
 
 
 def handle_targeting_keys(key):
+    """Handle target keys."""
     if key.vk == libtcod.KEY_ESCAPE:
         return {'exit': True}
 
@@ -102,11 +103,26 @@ def handle_targeting_keys(key):
 
 
 def handle_mouse(mouse):
+    """Handle mouse input."""
     (x, y) = (mouse.cx, mouse.cy)
 
     if mouse.lbutton_pressed:
         return {'left_click': (x, y)}
     elif mouse.rbutton_pressed:
         return {'right_click': (x, y)}
+
+    return {}
+
+
+def handle_main_menu(key):
+    """Handle main menu input."""
+    key_char = chr(key.c)
+
+    if key_char == 'a':
+        return {'new_game': True}
+    elif key_char == 'b':
+        return {'load_game': True}
+    elif key_char == 'c' or key.vk == libtcod.KEY_ESCAPE:
+        return {'exit': True}
 
     return {}
