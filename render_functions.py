@@ -4,6 +4,10 @@ import libtcodpy as libtcod
 
 from enum import Enum
 
+from game_states import GameStates
+
+from menus import inventory_menu
+
 
 class RenderOrder(Enum):
     """Rendering order."""
@@ -41,7 +45,7 @@ def get_names_under_mouse(mouse, entities, fov_map):
 
 
 def render_all(con, panel, entities, player, game_map, fov_map, fov_recompute, message_log, screen_width, screen_height,
-               bar_width, panel_height, panel_y, mouse, colors):
+               bar_width, panel_height, panel_y, mouse, colors, game_state):
     """Draw all game tiles and all entities in the list."""
     if fov_recompute:
         for y in range(game_map.height):
@@ -72,6 +76,14 @@ def render_all(con, panel, entities, player, game_map, fov_map, fov_recompute, m
                              'HP: {0:02}/{1:02}'.format(player.fighter.hp, player.fighter.max_hp))
 
     libtcod.console_blit(con, 0, 0, screen_width, screen_height, 0, 0, 0)
+
+    if game_state in (GameStates.SHOW_INVENTORY, GameStates.DROP_INVENTORY):
+        if game_state == GameStates.SHOW_INVENTORY:
+            inventory_title = 'Press the key next to an item to use it, or Esc to cancel.\n'
+        else:
+            inventory_title = 'Press the key next to an item to drop it, or Esc to cancel.\n'
+
+        inventory_menu(con, inventory_title, player.inventory, 50, screen_width, screen_height)
 
     libtcod.console_set_default_background(panel, libtcod.black)
     libtcod.console_clear(panel)

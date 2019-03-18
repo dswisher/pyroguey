@@ -42,3 +42,10 @@ class Fighter:
                 self.owner.name.capitalize(), target.name), libtcod.white)})
 
         return results
+
+    def heal(self, amount):
+        """Heal the fighter."""
+        self.hp += amount
+
+        if self.hp > self.max_hp:
+            self.hp = self.max_hp
