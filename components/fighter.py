@@ -8,12 +8,13 @@ from game_messages import Message
 class Fighter:
     """Fighter component."""
 
-    def __init__(self, hp, defense, power):
+    def __init__(self, hp, defense, power, xp=0):
         """Constructor."""
         self.max_hp = hp
         self.hp = hp
         self.defense = defense
         self.power = power
+        self.xp = xp
 
     def take_damage(self, amount):
         """Take damage."""
@@ -22,7 +23,7 @@ class Fighter:
         self.hp -= amount
 
         if self.hp <= 0:
-            results.append({'dead': self.owner})
+            results.append({'dead': self.owner, 'xp': self.xp})
 
         return results
 
