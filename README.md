@@ -14,8 +14,27 @@ Using python3:
     pip install tcod
 
 
+## TODO ##
+
+* Use key-map defined [here](http://www.roguebasin.com/index.php?title=Preferred_Key_Controls) (RogueBasin)
+* Add 1-cell border left and right of map to prep for keyboard targetting
+* Allow targeting via keyboard
+* Add scrolls that do AOE
+* Add rings (new equipment slot)
+* Add more weapons
+* Add more mobs
+* Show equipped items on character screen
+* Add ability to go back up stairs
+* Add gold
+* Add shops (surface level) to buy/sell items
+* Loot corpses for gold
+* Collapse inventory - one line for all healing potions, with a count
+* Limit inventory by weight - can carry lots of healing pots, only a few swords
+* Fix libtcod deprecation warnings
+
 ## Links ##
 
+* libtcod - [github](https://github.com/libtcod/python-tcod) - [docs](https://python-tcod.readthedocs.io/en/latest/)
 * Roguelikedev [tutorial revised](https://www.reddit.com/r/roguelikedev/wiki/python_tutorial_series)
   * [part 1](http://rogueliketutorials.com/libtcod/1) - Drawing the '@' symbol and moving it around
   * [part 2](http://rogueliketutorials.com/libtcod/2) - The generic Entity, the render functions, and the map
@@ -31,5 +50,4 @@ Using python3:
   * [part 12](http://rogueliketutorials.com/libtcod/12) - Tuning the difficulty
   * [part 13](http://rogueliketutorials.com/libtcod/13) - Equipment
   * repos: [official](https://github.com/TStand90/roguelike_tutorial_revised/tree/part1), [toptea](https://github.com/toptea/roguelike_tutorial/tree/part1), [kelte](https://github.com/brianbruggeman/kelte)
-* libtcod - [github](https://github.com/libtcod/python-tcod) - [docs](https://python-tcod.readthedocs.io/en/latest/)
 

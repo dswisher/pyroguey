@@ -20,8 +20,8 @@ def get_constants():
     """Get all the constants."""
     window_title = 'Roguelike Tutorial Revised'
 
-    screen_width = 80
-    screen_height = 50
+    screen_width = 100
+    screen_height = 60
 
     bar_width = 20
     panel_height = 7
@@ -31,12 +31,12 @@ def get_constants():
     message_width = screen_width - bar_width - 2
     message_height = panel_height - 1
 
-    map_width = 80
-    map_height = 43
+    map_width = 98
+    map_height = 53
 
     room_max_size = 10
     room_min_size = 6
-    max_rooms = 30
+    max_rooms = 40
 
     fov_algorithm = 0
     fov_light_walls = True
