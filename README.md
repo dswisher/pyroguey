@@ -34,6 +34,8 @@ Using python3:
 
 ## Links ##
 
+* bearlibterminal - [home](http://foo.wyrd.name/en:bearlibterminal) - [api ref](http://foo.wyrd.name/en:bearlibterminal:reference)
+* esper - [github](https://github.com/benmoran56/esper)
 * libtcod - [github](https://github.com/libtcod/python-tcod) - [docs](https://python-tcod.readthedocs.io/en/latest/)
 * Roguelikedev [tutorial revised](https://www.reddit.com/r/roguelikedev/wiki/python_tutorial_series)
   * [part 1](http://rogueliketutorials.com/libtcod/1) - Drawing the '@' symbol and moving it around
@@ -49,5 +51,8 @@ Using python3:
   * [part 11](http://rogueliketutorials.com/libtcod/11) - Multiple floors
   * [part 12](http://rogueliketutorials.com/libtcod/12) - Tuning the difficulty
   * [part 13](http://rogueliketutorials.com/libtcod/13) - Equipment
-  * repos: [official](https://github.com/TStand90/roguelike_tutorial_revised/tree/part1), [toptea](https://github.com/toptea/roguelike_tutorial/tree/part1), [kelte](https://github.com/brianbruggeman/kelte)
+  * repos: [official](https://github.com/TStand90/roguelike_tutorial_revised/tree/part1)
+    * [toptea](https://github.com/toptea/roguelike_tutorial/tree/part1) - esper
+    * [kuraha4](https://github.com/kuraha4/roguelike-tutorial-python) - bearlibterminal
+    * [kelte](https://github.com/brianbruggeman/kelte)
 
