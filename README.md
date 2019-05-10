@@ -32,9 +32,21 @@ Using python3:
 * Limit inventory by weight - can carry lots of healing pots, only a few swords
 * Fix libtcod deprecation warnings
 
+## Entity-Component Systems ##
+
+* General
+  * [Nomad Game Engine: Part 2 — ECS](https://medium.com/@savas/nomad-game-engine-part-2-ecs-9132829188e5)
+* Input Handling
+  * GameDev - [Input handling in component based design](https://gamedev.stackexchange.com/questions/49119/input-handling-in-component-based-design) - higher level system selects "controlled entity"; context-dependent "intention generators" that live outside the component system
+  * GameDev - [Event handling in Pure Entity Component Systems, is this approach correct?](https://gamedev.stackexchange.com/questions/141636/event-handling-in-pure-entity-component-systems-is-this-approach-correct) - inter-system communication, via messaging; events (past) and commands (future); keep UI and ECS separate
+  * GameDev - [Game state and input handling in component-based entity systems](https://gamedev.stackexchange.com/questions/48315/game-state-and-input-handling-in-component-based-entity-systems) - intermediate "intent system", separate from ECS
+  * GameDev - [State changes in entities or components](https://gamedev.stackexchange.com/questions/40608/state-changes-in-entities-or-components) - change components on an entity at runtime to alter behavior
+  * GameDev - [How to structure game states in an entity/component-based system](https://gamedev.stackexchange.com/questions/31153/how-to-structure-game-states-in-an-entity-component-based-system) - TO BE READ
+  * GameDev - [How to update entity states and animations in a component-based game?](https://gamedev.stackexchange.com/questions/40672/how-to-update-entity-states-and-animations-in-a-component-based-game) - TO BE READ
+
 ## Links ##
 
-* bearlibterminal - [home](http://foo.wyrd.name/en:bearlibterminal) - [api ref](http://foo.wyrd.name/en:bearlibterminal:reference)
+* bearlibterminal - [home](http://foo.wyrd.name/en:bearlibterminal) - [api ref](http://foo.wyrd.name/en:bearlibterminal:reference) - [python](https://bitbucket.org/cfyzium/bearlibterminal/src/a105007352d598bbc269c611970cca1eb014759c/Terminal/Include/Python/bearlibterminal/terminal.py?at=default&fileviewer=file-view-default)
 * esper - [github](https://github.com/benmoran56/esper)
 * libtcod - [github](https://github.com/libtcod/python-tcod) - [docs](https://python-tcod.readthedocs.io/en/latest/)
 * Roguelikedev [tutorial revised](https://www.reddit.com/r/roguelikedev/wiki/python_tutorial_series)
@@ -52,7 +64,7 @@ Using python3:
   * [part 12](http://rogueliketutorials.com/libtcod/12) - Tuning the difficulty
   * [part 13](http://rogueliketutorials.com/libtcod/13) - Equipment
   * repos: [official](https://github.com/TStand90/roguelike_tutorial_revised/tree/part1)
-    * [toptea](https://github.com/toptea/roguelike_tutorial/tree/part1) - esper
+    * [toptea](https://github.com/toptea/roguelike_tutorial) - esper
     * [kuraha4](https://github.com/kuraha4/roguelike-tutorial-python) - bearlibterminal
     * [kelte](https://github.com/brianbruggeman/kelte)
 
